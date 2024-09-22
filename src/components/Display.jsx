@@ -1,9 +1,9 @@
 import styles from './Display.module.css'
 
-function Display() {
+function Display({displayValue}) {
     return ( 
         <>
-          <input className={styles.input}></input>
+          <input className={styles.input} value={displayValue} readOnly></input>
         </>
      );
 }
